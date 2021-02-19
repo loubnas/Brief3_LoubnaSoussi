@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gallerie </title>
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<link rel="stylesheet" type="text/css" href="gallerie.css">
+	<meta name="auteur" content="Loubna Soussi" >
+	<meta name="keywords" content="voiture, agence, location,véhicule, prix">
+	<meta name="description" content="location de toute types de  vehicules">
+	
+</head>
+
+<body>	
+	<script>
+        function nav(){
+            var nav = document.getElementById("navcontenu");
+            if(nav.getAttribute("vue")=="active")
+            {
+                document.getElementById("navcontenu").classList.remove("menu");
+                nav.setAttribute("vue","");
+            }else
+            {
+                nav.setAttribute("vue","active");
+                document.getElementById("navcontenu").classList.add("menu");
+
+            }
+			        }
+    </script>
+<!-- header -->
+ <header>	
+	<svg class="iconenav" viewBox="0 0 100 80" width="40" height="40" fill="#3081BF" onclick="nav()">
+		<rect width="100" height="20"></rect>
+		<rect y="30" width="100" height="20"></rect>
+		<rect y="60" width="100" height="20"></rect>
+	  </svg>
+ 	 <img src="images/logo.png">
+<ul id="navcontenu" class=" " vue="" >
+            <li > <a href="index.html">Acceuil</a> </li>
+            <li> <a href="gallerie.html" class="active">Gallerie</a> </li>
+            <li><a href="reservation.html">Réservation</a></li>
+            <li > <a href="contact.html">Contact</a></li>
+            <li>
+         </ul>                            	 	
+ </header>
+<!-- end header -->
+
+<!--main-->
+ <main> 
+   <div class="vehicules">
+   	 <div class="tile1">
+   	 	<h3> Voiture : </h3></div>
+   	 <div class="vehicules1">
+   	 <div class="ligne1">
+   	 	<div class="voiture"><img src="images/voiture1.jpg" alt="this is a car 1"> </div>
+   	 	<div class="voiture"><img src="images/voiture2.jpg" alt="this is a car 2"> </div>
+   	 	<div class="voiture"><img src="images/voiture3.jpg" alt="this is a car3 "> </div>
+   	 </div>
+   	 <div class="ligne2">
+   	 	<div class="voiture"><img src="images/voiture4.jpg" alt="this is a car 4"> </div>
+   	 	<div class="voiture"><img src="images/voiture5.jpg" alt="this is a car 5"> </div>
+   	 	<div class="voiture"><img src="images/voiture6.jpg" alt="this is a car 6"> </div>
+     </div> </div>
+
+     <div class="tile1">
+   	 	<h3> Moto: </h3></div>
+ <div class="vehicules2">
+ 	<div class="ligne1">
+   	 	<div class="moto"><img src="images/moto1.png" alt="this is a moto 1"> </div>
+   	 	<div class="moto"><img src="images/moto2.jpg" alt="this is a moto  2"> </div>
+   	 	<div class="moto"><img src="images/moto3.jpg" alt="this is a moto 3 "> </div>
+   	</div>
+   	<div class="ligne2">
+   	 	<div class="moto"><img src="images/moto4.jpg" alt="this is a moto 4"> </div>
+   	 	<div class="moto"><img src="images/moto5.jpg" alt="this is a moto 5"> </div>
+   	 	<div class="moto"><img src="images/moto6.jpg" alt="this is a moto 6"> </div>
+     </div> </div>
+
+<div class="tile1">
+   	 	<h3> Engin de chantier : </h3></div>
+ <div class="vehicules3">
+ 	<div class="ligne1">
+   	 	<div class="engin"><img src="images/engin1.jpg" alt="this is a engin 1"> </div>
+   	 	<div class="engin"><img src="images/engin2.jpg" alt="this is a engin  2"> </div>
+   	 	<div class="engin"><img src="images/engin3.jpg" alt="this is a engin 3 "> </div>
+   	 </div>
+   	 <div class="ligne2">	
+   	 	<div class="engin"><img src="images/engin4.jpg" alt="this is a engin  4"> </div>
+   	 	<div class="engin"><img src="images/engin5.jpg" alt="this is a engin 5"> </div>
+   	 	<div class="engin"><img src="images/engin6.jpg" alt="this is a engin 6"> </div>
+     </div></div>
+
+<div class="tile1">
+   	 	<h3> Camion : </h3></div>
+ <div class="vehicules4">
+ 	<div class="ligne1">
+   	 	<div class="camion"><img src="images/camion1.jpg" alt="this is a camion 1"> </div>
+   	 	<div class="camion"><img src="images/camion2.jpg" alt="this is a camion  2"> </div>
+   	 	<div class="camion"><img src="images/camion3.jpg" alt="this is a camion 3 "> </div>
+   	</div>
+   	<div class="ligne2"> 	
+   	 	<div class="camion"><img src="images/camion4.jpg" alt="this is a camion 4"> </div>
+   	 	<div class="camion"><img src="images/camion5.jpg" alt="this is a camion 5"> </div>
+   	 	<div class="camion"><img src="images/camion6.jpg" alt="this is a camion 6"> </div>
+     </div> </div>
+
+ </div>
+
+
+
+ </main>
+
+<!-- end main -->
+ 
+ <!--footer-->
+	<footer>
+		<div class="phone footer">
+			<img src="icon/phone-square-alt-solid.png">
+			<h3>+212649849897</h3>
+		</div>
+		<div class="email footer">
+			<img src="icon/envelope-solid.png">
+			<h3>loubnasoussi15489@gmail.com</h3>
+		</div>
+		<div class="facebook footer">
+			<img src="icon/facebook-square-brands.png">
+			<h3>Loubna Soussi</h3>
+		</div>
+		<div class="instagram footer">
+			<img src="icon/instagram-square-brands.png">
+			<h3>Loubna_Soussi</h3>
+		</div>
+	</footer>
+	<!-- end footer -->
+</body>
+</html>

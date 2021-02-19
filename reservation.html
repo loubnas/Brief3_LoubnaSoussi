@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Reservation</title>
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<link rel="stylesheet" type="text/css" href="reservation.css">
+    <meta name="auteur" content="Loubna Soussi" >
+	<meta name="keywords" content="voiture, agence, location,véhicule, prix">
+	<meta name="description" content="location de toute types de  vehicules">
+   
+  
+</head>
+
+<body>	
+    <script>
+        function nav(){
+            var nav = document.getElementById("navcontenu");
+            if(nav.getAttribute("vue")=="active")
+            {
+                document.getElementById("navcontenu").classList.remove("menu");
+                nav.setAttribute("vue","");
+            }else
+            {
+                nav.setAttribute("vue","active");
+                document.getElementById("navcontenu").classList.add("menu");
+
+            }
+			        }
+    </script>
+    
+<!-- header -->
+ <header>	 
+    <svg class="iconenav" viewBox="0 0 100 80" width="40" height="40" fill="#3081BF" onclick="nav()">
+		<rect width="100" height="20"></rect>
+		<rect y="30" width="100" height="20"></rect>
+		<rect y="60" width="100" height="20"></rect>
+	  </svg>
+ 	     <img src="images/logo.png">
+ 	<ul id="navcontenu" class=" " vue="" >
+            <li > <a href="index.html">Acceuil</a> </li>
+            <li> <a href="gallerie.html">Gallerie</a> </li>
+            <li><a href="reservation.html"  class="active">Réservation</a></li>
+            <li > <a href="contact.html">Contact</a></li>
+            <li>
+         </ul>                            	 	
+ </header>
+<!-- end header -->
+
+<!--main-->
+ <main> 
+
+  <div class="typevehicules">
+    <h2>Type de véhicules : </h2>
+</div>
+ <div class ="best-vehicules">
+    <img src="images/MOTO.jpg" alt="this is a moto" id="moto" onclick="Choix(this)"> 
+    <img src="images/compact.jpg" alt="this is a compact" id="compact" onclick="Choix(this)">
+    <img src="images/citadine.jpg" alt="this is a citadine " id="citadin" onclick="Choix(this)">
+    <img src="images/utilitaire.jpg" alt="this is a utilitaire " id="utilitaire" onclick="Choix(this)">
+    <img src="images/berlin.jpg" alt="this is a sedan/berlin" id="sedanberlin" onclick="Choix(this)">
+    <img src="images/camion.jpg" alt="this is a camion" id="camion" onclick="Choix(this)">
+    <img src="images/enginchantier.jpg" alt="this is engin de chantier"id="engin" onclick="Choix(this)" >
+ </div>
+<div class="group1">
+<fieldset>
+    <legend>Type du carburant :</legend>
+
+<div class="carb">
+    <div class="carburant" id="Essence">
+    <input type="radio" name="radio" id="Essence"> 
+    <label for="Essence">Essence</label> </div>
+
+    <div class="carburant" id="Diesel">
+    <input type="radio" name="radio" id="Diesel">
+    <label for="Diesel">Diesel</label> </div>
+
+    <div class="carburant" id="Electrique">
+    <input type="radio" name="radio" id="Electrique">
+    <label for="Electrique">Electrique</label> </div>
+
+    <div class="carburant" id="Hybride">
+    <input type="radio" name="radio" id="Hybride">
+    <label for="Hybride">Hybride</label> </div> </div>
+
+  </fieldset> 
+
+<fieldset id="boite_vitesse">
+   
+    <legend>Type de boite à vitesse :</legend>
+
+    <div class="TYPEvitesse" >
+    <div class="vitesse" id="boite_Manuelle">
+    <input type="radio" name="radioc" id="Manuelle">
+    <label for="Manuelle">Manuelle</label>
+    </div>
+
+    <div class="vitesse" id="boite_Automatique">
+    <input type="radio" name="radioc" id="Automatique">
+    <label for="Automatique">Automatique</label></div>
+     </div>
+  </fieldset>
+
+
+<fieldset>
+    <legend>Durée de réservation :</legend>
+    <div class="duree-reservation">
+     <label for="Durée">Durée </label>
+     <input type="text" name="date"  id="date"> </div>
+  </fieldset>
+
+<div class="bouton">
+        <input type="submit" value="Estimation du prix" id="btn-envoie" onclick="estimation_prix()">
+    </div>
+    
+
+<fieldset>
+    <legend>Facture :</legend>
+    <h3 id="resulttype_vehicule">Type de véhicule : </h3>
+    <h3 id="resulttype_carburant">Type du carburant : </h3>
+    <h3 id="Resulboite_vitesse">Type de boite à vitesse : </h3>
+    <h3 id="dure_reservation">Durée de réservation : </h3>
+    <h3 id="prix_totale">Prix total : </h3>
+  
+  </fieldset> </div>
+ </main>
+
+
+
+
+ 
+ <!--footer-->
+    <footer>
+        <div class="phone footer">
+            <img src="icon/phone-square-alt-solid.png">
+            <h3>+212649849897</h3>
+        </div>
+        <div class="email footer">
+            <img src="icon/envelope-solid.png">
+            <h3>loubnasoussi15489@gmail.com</h3>
+        </div>
+        <div class="facebook footer">
+            <img src="icon/facebook-square-brands.png">
+            <h3>Loubna Soussi</h3>
+        </div>
+        <div class="instagram footer">
+            <img src="icon/instagram-square-brands.png">
+            <h3>Loubna_Soussi</h3>
+        </div>
+    </footer>
+    <!-- end footer -->
+</body>
+
+ <script src="reservation.js"> </script>
+
+</html>

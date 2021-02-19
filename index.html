@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Acceuil </title>
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="auteur" content="Loubna Soussi" >
+	<meta name="keywords" content="voiture, agence, location,véhicule, prix">
+	<meta name="description" content="location de toute types de  vehicules">
+	
+	
+</head>
+
+<body>	
+	<script>
+        function nav(){
+            var nav = document.getElementById("navcontenu");
+            if(nav.getAttribute("vue")=="active")
+            {
+                document.getElementById("navcontenu").classList.remove("menu");
+                nav.setAttribute("vue","");
+            }else
+            {
+                nav.setAttribute("vue","active");
+                document.getElementById("navcontenu").classList.add("menu");
+
+            }
+			        }
+    </script>
+<!-- header -->
+ <header>	
+	<svg class="iconenav" viewBox="0 0 100 80" width="40" height="40" fill="#3081BF" onclick="nav()">
+		<rect width="100" height="20"></rect>
+		<rect y="30" width="100" height="20"></rect>
+		<rect y="60" width="100" height="20"></rect>
+	  </svg>
+ 	 <img src="images/logo.png">
+	<ul id="navcontenu" class=" " vue="" >
+            <li > <a href="index.html" class="active">Acceuil</a> </li>
+            <li> <a href="gallerie.html">Gallerie</a> </li>
+            <li><a href="reservation.html">Réservation</a></li>
+            <li > <a href="contact.html">Contact</a></li>
+            <li>
+         </ul>                            	 	
+ </header>
+
+ <!-- end header -->
+
+
+ <!--main-->
+	<main>
+			<h1>LOCA LOUBNA :</h1>
+
+
+		<div class="content">
+			
+				<img src="images/LoVoiture.jpg">
+				<p>LOCA LOUBNA est une agence de location de 
+					toute types de véhicules . Note agence met à 
+					votre disposition la posibilité de réserver en
+					ligne votre véhicule ansi que de profiter d'un
+					rapport qualité de sérvice et prix resonnable .
+				</p>	
+		</div>
+
+  <div class="section"> 
+  	<div class="Bst">
+      <h2> Recommandation des meilleurs voitures : </h2>
+</div>
+  <div class ="best-vehicules">
+  <div  class="slide"> <img src="images/car1.jpg"  alt="this is a car "> </div>
+  <div  class="slide"> <img src="images/car2.jpg"  alt="this is a  2 car "> </div>
+  <div  class="slide"> <img src="images/car3.jpg"  alt="this is a 3  car "> </div>
+  <div  class="slide"> <img src="images/car4.jpg"  alt="this is a 4 car "> </div>
+  <div  class="slide"> <img src="images/car5.jpg"  alt="this is a 5 car "> </div>
+  <div  class="slide"> <img src="images/car6.jpg"  alt="this is a 5 car "> </div>
+
+</div>
+  </div>
+
+		
+	</main>
+	<!-- end main-->
+ 
+
+ 
+ <!--footer-->
+	<footer>
+		 <div class="phone footer">
+			<img src="icon/phone-square-alt-solid.png">
+			<h3>+212649849897</h3>
+		</div>
+		<div class="email footer">
+			<img src="icon/envelope-solid.png">
+			<h3>loubnasoussi15489@gmail.com</h3>
+		</div>
+		<div class="facebook footer">
+			<img src="icon/facebook-square-brands.png">
+			<h3>Loubna Soussi</h3>
+		</div>
+		<div class="instagram footer">
+			<img src="icon/instagram-square-brands.png">
+			<h3>Loubna_Soussi</h3>
+		</div> 
+	</footer>
+</body>
+
+</html>
