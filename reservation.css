@@ -14,9 +14,10 @@ fieldset{
 	padding:20px;
 	
 	}
-	.TYPEvitesse{
-		display: flex;
-	}
+	
+.TYPEvitesse{
+	display: flex;
+}
 
 legend{
 	color:#3081BF;
@@ -25,6 +26,7 @@ legend{
 
 input{
 margin: .3rem;
+cursor: pointer;
 }
 
 .bouton{
@@ -104,8 +106,9 @@ main img{
 	height: 150px;
 	margin-bottom: 10px;
 }
-}
 
+}
+ 
 
 
 @media screen and (max-width: 800px){
@@ -122,8 +125,12 @@ main img{
 
 .carb{
 	display:block;
+	position:relative;
+	/* margin-top: 28px;
+	margin-bottom: 25px; */
 	
 }
+
 .best-vehicules img{
     height: 150px;
 	width: 150px;
@@ -135,6 +142,12 @@ main img{
 .best-vehicules{
 	margin-bottom: -100px;
 
+}
+
+h3{
+	font-size: 15px;
+	margin-right: -5px;
+	
 }
 }
 
