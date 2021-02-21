@@ -14,7 +14,6 @@ fieldset{
 	padding:20px;
 	
 	}
-	
 .TYPEvitesse{
 	display: flex;
 }
@@ -62,7 +61,11 @@ input[type=submit]:hover {
 	display: flex;
 	
 }
-
+.all{
+	display: grid;
+	grid-template-columns: auto;
+	justify-content: center;
+}
 .carburant{
 	margin-right: 50px;
 }
@@ -73,7 +76,6 @@ input[type=submit]:hover {
     overflow-x: scroll;
     margin-bottom: -20px;
     height: 350px;
-    
 
 }
 
@@ -85,7 +87,6 @@ input[type=submit]:hover {
     margin-top: 30px;
 	cursor: pointer;
 }
-
 .typevehicules h2{
 	font-size: 20px;
 	color: #3081BF;
@@ -112,7 +113,9 @@ main img{
 
 
 @media screen and (max-width: 800px){
-	
+	.all{
+		display: unset;
+	}
 	main img{
 		width: 100px;
 		height: 100px;
@@ -126,8 +129,6 @@ main img{
 .carb{
 	display:block;
 	position:relative;
-	/* margin-top: 28px;
-	margin-bottom: 25px; */
 	
 }
 
